@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <title>デザイン演習Ⅲ・Ⅳ　第三回</title>
+  
+</head>
+<body>
+    <h1>ステッピングモーター</h1>
+  <b> 
+     <div>
+
+<b><code>
+    <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+    <li style="background-color:#EFF;">const int DIR  = 8;</li>
+    <li style="background-color:#EEF;">const int STEP = 9;</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">void setup() {</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;pinMode(DIR, OUTPUT);</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;pinMode(STEP, OUTPUT);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(DIR, LOW);</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;Serial.begin(9600);</li>
+    <li style="background-color:#EEF;">}</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">void loop() {</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;int val=0;</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;val=analogRead(1);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;Serial.println(val);</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;delay(50);</li>
+    <li style="background-color:#EFF;">&nbsp;if(val&lt;200){</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clockwise(5000);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;}else{</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;counter_clockwise(5000);</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
+    <li style="background-color:#EFF;"></li>
+    <li style="background-color:#EEF;">void clockwise(int delaytime){</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(DIR, HIGH);//HIGHは時計回り</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, HIGH);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">}</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">void counter_clockwise(int delaytime){</li>
+    <li style="background-color:#EEF;"></li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;digitalWrite(DIR, LOW);//はLOWは反時計回り</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, HIGH);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+    <li style="background-color:#EEF;">&nbsp;&nbsp;digitalWrite(STEP, LOW);</li>
+    <li style="background-color:#EFF;">&nbsp;&nbsp;delayMicroseconds(delaytime);</li>
+    <li style="background-color:#EEF;">}</li>
+    </ol></code></b>
+<br>ifなどを使うことで明るさの数値からうごかしたり止めたりすることができる　<br>
+
+
+
+ <h1>HMW</h1>   
+<img src="image/maikonn .png"   width=60%>
+
+<img src="image/maikonn .png"   width=60%>
+  
+    </div>
+
+</body>
+</html>
