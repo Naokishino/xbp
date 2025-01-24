@@ -4,7 +4,7 @@
   
    
     <title>個人プロジェクト4</title>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
  　<h1>テーマ：Pythonを使ってゲームを作る</h1>
@@ -12,13 +12,18 @@
   <hr>
       <h1>エラー修正編</h1>
 
-      <div>
+    
 
       <h2>アナコンダをPCに入れたものの、VScodeとの互換性や実行のコマンドが動作しない、
         pygameが使えないなどの問題を抱え、chatGPTを活用して問題特定をした</h2>
 
 
-      
+        <h2>原因</h2>
+        <div>
+        <b>原因はpython環境が２つ存在したことでパスの指定がうまく行えないということだった。<br>
+        環境設定からPathの優先順位を変えたりしたこともエラー解消に繋がった一因かもしれない。</b>
+
+      </div>
     <img src="images/pathbagu.png"   width=70% ><br>
 
     <img src="images/pathbagu2.png"   width=70% ><br>
@@ -34,8 +39,7 @@
 
 
 
-
-      </div>
+  
          <hr>
          <h3>次へ</h3>
          <li><a href="./main9.html">個人プロジェクト5</a>　</li>

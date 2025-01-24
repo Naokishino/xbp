@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+h2 {
+    color: #333;
+    text-align: center;
+}
+h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Central alignment for images */
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Alternatively, using flexbox for a container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+}
+/* Central alignment for links */
+
+a {
+    display: block;
+    text-align: center;
+}
+
+/* Alternatively, using flexbox for a container */
+.link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+}
+/* Central alignment for ul and li */
+
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Adjust for vertical alignment */
+}
+
+li {
+    text-align: center;
+    margin: 5px 0; /* Adjust spacing between items */
+}
+/* Central alignment for bold text (b element) */
+
+b {
+    display: block;
+    text-align: center;
+}
+
+/* Alternatively, using a flexbox container for centering */
+.bold-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust as needed */
+}
+/* Central alignment for div elements */
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust height as needed */
+    margin: 0 auto; /* Horizontal centering for block-level divs */
+}
+
+/* Alternatively, for specific divs */
+.centered-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Adjust height as needed */
+}
+
